@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>StructureActivation.Program</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.11.1, OS=Windows 10.0.17134.285 (1803/April2018Update/Redstone4), VM=Hyper-V
+Unknown processor
+.NET Core SDK=2.1.402
+  [Host]     : .NET Core 2.1.4 (CoreCLR 4.6.26814.03, CoreFX 4.6.26814.02), 64bit RyuJIT
+  DefaultJob : .NET Core 2.1.4 (CoreCLR 4.6.26814.03, CoreFX 4.6.26814.02), 64bit RyuJIT
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>      Method</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Scaled</th>
+</tr>
+</thead><tbody><tr><td>Activated</td><td>4.717 ns</td><td>0.0228 ns</td><td>0.0213 ns</td><td>1.00</td>
+</tr><tr><td>ActivatedWithStore</td><td>3.322 ns</td><td>0.0226 ns</td><td>0.0211 ns</td><td>0.70</td>
+</tr></tbody></table>
+</body>
+</html>
